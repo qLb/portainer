@@ -1,0 +1,7 @@
+pipeline:
+  slack:
+    image: plugins/slack
+    channel: dev
+    webhook: https://hooks.slack.com/services/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
+    when:
+      status: [ success, failure ]
